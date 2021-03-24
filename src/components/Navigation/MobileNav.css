@@ -1,0 +1,20 @@
+aside.mobile-nav {
+  display: none;
+}
+aside.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  aside.mobile-nav {
+    overflow: auto;
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    top: 0px;
+    height: 100vh;
+    width: calc(100% - 100px);
+    background-color: var(--dark2);
+    z-index: 98;
+  }
+}

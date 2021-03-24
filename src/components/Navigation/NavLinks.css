@@ -1,0 +1,45 @@
+nav.desktop-nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+nav.desktop-nav ul li {
+  display: inline;
+  margin: 10px;
+}
+nav button {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+.mobile-nav ul li:hover {
+  background-color: var(--highlight);
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+.mobile-nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+.mobile-nav ul li {
+  display: block;
+  margin: 20px;
+}
+.mobile-nav a {
+  font-size: 3em;
+  line-height: 1.5em;
+  padding: 10px;
+}
+.mobile-nav button {
+  font-size: 3em;
+}

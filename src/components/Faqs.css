@@ -1,0 +1,23 @@
+.faq_container {
+  display: grid;
+  grid-template-areas:
+    'id, id'
+    'question, question'
+    'answer, answer'
+    'edit, delete';
+}
+.faq_container .editButton {
+  grid-area: edit;
+}
+.faq_container .deleteButton {
+  grid-area: delete;
+}
+.faq_container .faqId {
+  grid-area: id;
+}
+.faq_container .faqQ {
+  grid-area: question;
+}
+.faq_container .faqA {
+  grid-area: answer;
+}

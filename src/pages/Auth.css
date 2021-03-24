@@ -1,0 +1,31 @@
+#auth {
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form.loginForm {
+  color: #fff;
+  margin: auto;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+form.loginForm button {
+  margin: auto;
+  width: 100%;
+  outline-style: none;
+}
+form.loginForm button.switchAuthMode {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  form.loginForm {
+    width: 100%;
+  }
+}

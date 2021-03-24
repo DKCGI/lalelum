@@ -1,0 +1,36 @@
+.form-control {
+  text-align: center;
+  display: grid;
+}
+.form-control--invalid {
+  color: rgb(230, 0, 0);
+}
+.form-control--invalid p {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}
+.form-control label {
+  padding-right: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  background-color: #fff;
+  color: #000;
+}
+.form-control input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  min-width: 40px;
+  background: linear-gradient(#fff, #eee);
+}
+.form-control textarea {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  background: linear-gradient(#fff, #eee);
+  resize: none;
+}
+.form-control input[type='number'] {
+  width: 100%;
+}

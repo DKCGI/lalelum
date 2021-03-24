@@ -1,0 +1,191 @@
+div.natureScene {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background: url(../../images/backgrounds/milkyway.jpg);
+  background-size: contain;
+  background-position: top;
+  top: 0;
+}
+.bottomFiller {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #243620;
+  z-index: -1;
+}
+#waterFallAnimation {
+  position: relative;
+  pointer-events: none;
+}
+svg {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  /* top: 0;
+  bottom: 0; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#circle,
+#bulb {
+  cursor: pointer;
+}
+g#cloudsBG path {
+  animation: moveRightLoop 60s 0s infinite linear;
+}
+g#fgclouds path {
+  animation: moveRightLoop 50s 0s infinite linear;
+}
+#highlights1_x5F_1 path {
+  animation: moveDownLoop 15s 0s infinite linear;
+}
+#highlights1_x5F_2 path {
+  animation: moveDownLoop 15s 7.5s infinite linear;
+}
+#highlights2_x5F_1 path {
+  animation: moveUpLoop 15s 0s infinite linear;
+}
+#highlights2_x5F_2 path {
+  animation: moveUpLoop 15s 7.5s infinite linear;
+}
+g#mistRight1 path {
+  animation: growFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#mistLeft1 path {
+  animation: growFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#mistRight2 path {
+  animation: growFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#mistLeft2 path {
+  animation: growFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#mistReflection1 path {
+  animation: growFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#mistReflection2 path {
+  animation: growFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#ripplesLeft1 path {
+  animation: growFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#ripplesLeft2 path {
+  animation: growFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#ripplesRight1 path {
+  animation: growFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#ripplesRight2 path {
+  animation: growFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#straightRipples1 {
+  animation: moveDownFade 5s 0s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+g#straightRipples2 {
+  animation: moveDownFade 5s 2.5s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+#wfDetails1 path {
+  animation: moveDownFade 0.2s 0s infinite;
+}
+#wfDetails2 path {
+  animation: moveDownFade 0.2s 0.1s infinite;
+}
+#wfDetails1_1_ path {
+  animation: moveUpFade 0.2s 0s infinite;
+}
+#wfDetails2_1_ path {
+  animation: moveUpFade 0.2s 0.1s infinite;
+}
+
+@keyframes moveRightLoop {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes moveDownLoop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes moveUpLoop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes growFade {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes moveDownFade {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes moveUpFade {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,21 @@
+main#products {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0 80px;
+  width: 100%;
+}
+main#products h1 {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  grid-column: 1/-1;
+}
+@media screen and (max-width: 900px) {
+  main#products {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+}

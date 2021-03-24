@@ -1,0 +1,124 @@
+main > h1 {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+.cartItems .header {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.empty {
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.empty h3 {
+  background-color: var(--light);
+  padding: 30px;
+  text-align: center;
+}
+.empty a {
+  font-size: 2em;
+  text-align: center;
+}
+main section.cartItems {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--medium);
+}
+main section.cartItems .cartItem {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: left;
+  border-bottom: 2px solid #fff;
+  background-color: var(--dark1);
+  color: #fff;
+  padding: 10px;
+}
+.cartItem .itemName {
+  align-items: center;
+  justify-content: center;
+}
+.cartItem h1,
+.cartItem h2 {
+  padding: 10px;
+}
+.cartItem .button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background: transparent;
+  color: var(--warn);
+  font-size: 1.5em;
+  outline-style: none;
+}
+.cartItem .button:hover {
+  color: red;
+}
+.cartItems div img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cartItem input {
+  font-size: 1.5em;
+  border: none;
+  padding: 5px;
+  min-width: 40px;
+  background: linear-gradient(#fff, #eee);
+  border-radius: 10px;
+  margin: 5px;
+  max-height: 40px;
+}
+.cartItems .sub-total {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.cartItems .checkout-btn {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  main section.cartItems {
+    font-size: 0.5em;
+  }
+  main section.cartItems .header {
+    display: none;
+  }
+  main section.cartItems div.cartItem {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .cartItem .itemName {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .cartItem .itemName .button {
+    grid-row: 1/2;
+    width: 100%;
+  }
+  .cartItem .itemName input {
+    grid-column: 1/-1;
+    width: 100px;
+  }
+  .cartItem .itemName input .cartItems .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cartItems div img {
+    grid-column: 1/-1;
+  }
+}

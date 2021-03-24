@@ -1,0 +1,21 @@
+.aboutBlock {
+  padding: 20px;
+  color: #fff;
+  width: 700px;
+  margin: auto;
+  background-color: var(--dark1Transparent);
+}
+.aboutBlock h1,
+.aboutBlock h2,
+.aboutBlock h3,
+.aboutBlock h4 {
+  text-align: center;
+  padding: 10px;
+  font-size: 500%;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutBlock {
+    width: 100%;
+  }
+}

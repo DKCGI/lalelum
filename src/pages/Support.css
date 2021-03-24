@@ -1,0 +1,60 @@
+main#support-section {
+  min-height: calc(100vh - 77px);
+}
+
+main#support-section h2 {
+  text-align: center;
+  color: var(--dark1);
+}
+div.support-nav {
+  width: 100%;
+  padding: 10px;
+}
+div.support-nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+div.support-nav ul li {
+  display: inline-block;
+}
+div.support-nav ul li a {
+  display: inline-block;
+  padding: 5px;
+  margin: 0px 20px;
+}
+div.support-content {
+  grid-template-columns: 1fr 1fr;
+  width: calc(100% - 300px);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light);
+  padding: 20px;
+}
+div#faq-section {
+  height: 100%;
+  padding: 10px;
+}
+main#support-section #contact-section form {
+  display: grid;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+main#support-section #contact-section p {
+  padding: 10px 5px;
+}
+main#support-section #contact-section button {
+  width: 100px;
+}
+main#support-section #policy-section {
+  padding: 10px;
+  grid-column: 1/-1;
+}
+
+@media screen and (max-width: 900px) {
+  div.support-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}

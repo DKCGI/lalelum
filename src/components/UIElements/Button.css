@@ -1,0 +1,24 @@
+.button {
+  padding: 5px;
+  background-color: #b271e7;
+  background: var(--brightGradient);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.button:focus {
+  outline-color: var(--highlight);
+}
+.button:active {
+  border-color: var(--highlight);
+  background: linear-gradient(#8672ca, #8d4bc4);
+}
+.button--inverse {
+  background-color: #fff;
+  background: linear-gradient(#ffffff, #d6d6d6);
+  border: 2px solid #614da5;
+  color: #614da5;
+}
+.button:disabled {
+  background: #999;
+}

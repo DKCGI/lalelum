@@ -1,0 +1,16 @@
+div.logo {
+  width: 60px;
+  margin: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #ffffff62 0%, #ffffff00 70%);
+  border-radius: 50%;
+}
+div.logo img {
+  text-align: center;
+  padding-top: 5px;
+  height: 50px;
+  margin: auto;
+}

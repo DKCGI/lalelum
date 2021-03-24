@@ -1,0 +1,17 @@
+.cart-button {
+  width: 100%;
+  position: relative;
+}
+.cart-button p {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  color: #b271e7;
+  transform: translateX(-50%);
+}
+.icon-cart {
+  display: block;
+  height: 40px;
+  margin: auto;
+  fill: #000;
+}

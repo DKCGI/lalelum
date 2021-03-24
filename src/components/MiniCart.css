@@ -1,0 +1,10 @@
+.minicart {
+  height: 100%;
+  padding: 20px;
+  grid-area: cart;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}

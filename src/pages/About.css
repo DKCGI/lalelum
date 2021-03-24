@@ -1,0 +1,10 @@
+main#support-section {
+  min-height: calc(100vh - 77px);
+}
+main#about h2 {
+  text-align: center;
+  color: var(--dark1);
+}
+main#about .abouts-container {
+  background-color: snow;
+}

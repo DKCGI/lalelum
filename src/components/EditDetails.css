@@ -1,0 +1,44 @@
+.details.editable {
+  height: 100%;
+  width: 100%;
+  grid-area: details;
+  text-align: right;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div.details.editable .detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.details.editable .detail {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+}
+
+div.details.editable ul {
+  list-style-type: none;
+  padding-left: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+div.details.editable label {
+  text-align: left;
+  padding: 5px;
+}
+.newDetail {
+  padding: 10px 0;
+  grid-area: newDetail;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+}
+.newDetail h4 {
+  text-align: center;
+  grid-column: 1/-1;
+  background-color: var(--light);
+  padding: 5px;
+}

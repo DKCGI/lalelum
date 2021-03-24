@@ -1,0 +1,10 @@
+header.mainHeader {
+  background-color: var(--dark1);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 99;
+}

@@ -1,0 +1,7 @@
+#anionCanvas {
+  position: fixed;
+  top: 0;
+  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
