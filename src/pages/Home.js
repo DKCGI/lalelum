@@ -22,7 +22,10 @@ const Home = (props) => {
           <a href='/#' className='anchor' id='section2'>
             anchor
           </a>
-          <h1>Check it out Mayn</h1>
+          <h1>Illuminate your mood</h1>
+          <video autoPlay muted loop>
+            <source src='../images/candle.mp4'></source>
+          </video>
         </div>
       </section>
     </main>

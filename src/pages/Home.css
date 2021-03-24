@@ -59,3 +59,17 @@ div.lightTint {
   position: absolute;
   top: -100px;
 }
+video {
+  mask-image: url(../images/black.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  max-width: 900px;
+  min-height: 200px;
+  display: block;
+  margin: auto;
+  top: 100px;
+}
