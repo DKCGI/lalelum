@@ -17,6 +17,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
+DavidGit
+DavidGit.pub
 
 npm-debug.log*
 yarn-debug.log*
